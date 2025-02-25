@@ -1,0 +1,61 @@
+@layer bootstrap, main;
+@layer main {
+  /* GENERAL STYLE */
+  :root {
+    --main-color: #8e7754;
+    --white: white;
+    --black: black;
+    --upper-footer: #403d38;
+    --lower-footer: #353330;
+  }
+  body {
+    font-family: "Alegreya", serif;
+    scroll-behavior: auto;
+  }
+  p,
+  li {
+    font-family: "Alegreya Sans", serif;
+  }
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  /* HEADER */
+  header{
+    min-height: 35vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/drew-coffman-1872.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* FORM */
+  #form button{
+    background-color: var(--main-color);
+    color: var(--white);
+    transition: all 0.3s;
+}
+  #form button:hover{
+    background-color: #353330;
+  }
+  #form .form-control:focus{
+    border-color: var(--main-color);
+    box-shadow: none;
+  }
+  /* CONTACT INFO STYLE */
+  .contact-details ul li div {
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .contact-details ul li div i {
+    color: var(--white);
+    font-size: 18px;
+  }
+}

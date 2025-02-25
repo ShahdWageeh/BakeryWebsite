@@ -1,0 +1,118 @@
+
+@layer bootstrap, main;
+@layer main {
+  /* GENERAL STYLE */
+  :root {
+    --main-color: #8e7754;
+    --white: white;
+    --black: black;
+    --upper-footer: #403d38;
+    --lower-footer: #353330;
+  }
+  body {
+    font-family: "Alegreya", serif;
+    scroll-behavior: auto;
+  }
+  p,
+  li {
+    font-family: "Alegreya Sans", serif;
+  }
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  /* HEADER STYLE */
+  header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/drew-coffman-1872.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+  }
+  header h1 {
+    font-size: 80px;
+  }
+  header .btns .btn1 {
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+  }
+  header .btns a:hover {
+    background-color: var(--white);
+    color: black;
+    border: 2px solid var(--white);
+  }
+  header .btns .btn2 {
+    padding: 15px 20px;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  header .scroll-who {
+    width: 30px;
+    height: 50px;
+    border: 2px solid var(--white);
+  }
+  header .scroll-who .animate__animated {
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+  }
+  @media (max-width: 576px) {
+    header h1 {
+      font-size: 40px;
+    }
+    header > div {
+      padding-top: 45px;
+    }
+  }
+
+  /* WHO WE ARE STYLE */
+  .who-details ul li div {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .who-details ul li div i {
+    color: var(--main-color);
+    font-size: 18px;
+  }
+
+  /* CONTACT INFO STYLE */
+  .contact-details ul li div {
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .contact-details ul li div i {
+    color: var(--white);
+    font-size: 18px;
+  }
+}
