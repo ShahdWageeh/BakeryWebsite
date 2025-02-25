@@ -64,6 +64,11 @@
 .img-wrapper img{
     height: 80vh;
 }
+@media(max-width:992px){
+  .img-wrapper img{
+    height: auto;
+}
+}
 .img-wrapper i{
     cursor: pointer;
 }
